@@ -36635,3 +36635,11 @@ yx-axis
 .mercury-icon-house:before {
   content: '\e84d';
 }
+
+
+/* CUSTOM CSS */
+
+
+.customPadding {
+  padding: 90px 0 40px 0;
+}
