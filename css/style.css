@@ -221,11 +221,11 @@ p * {
 }
 
 p a {
-  color: #ea5a04;
+  color: #151515;
 }
 
 p a:hover, p a:active, p a.hover, p a.active {
-  color: #ffbf6c;
+  color: #ea5a04;
 }
 
 p [data-toggle='tooltip'] {
