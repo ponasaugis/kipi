@@ -36643,3 +36643,16 @@ yx-axis
 .customPadding {
   padding: 90px 0 40px 0;
 }
+
+ol {
+  counter-reset: item;
+}
+
+ol li::before {
+    content: counters(item,". ",decimal-leading) ". ";
+    counter-increment: item;
+    color: #151515;
+    font-family: lato,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    margin-right: 12px;
+}
