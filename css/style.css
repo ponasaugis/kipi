@@ -2201,6 +2201,9 @@ hr {
     height: 30px;
     animation: .4s changeAxisBack both;
   }
+  .card-creative__subtitle {
+    min-height: 96px;
+  }
 }
 
 @-webkit-keyframes changeAxis {
