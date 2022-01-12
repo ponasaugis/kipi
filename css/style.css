@@ -222,9 +222,11 @@ p * {
 
 p a {
   color: #151515;
+  /*color: #ea5a04;*/
 }
 
 p a:hover, p a:active, p a.hover, p a.active {
+  /*color: #ffbf6c;*/
   color: #ea5a04;
 }
 
@@ -1659,7 +1661,7 @@ hr {
 }
 
 .bg-gray-dark, .bg-gray-3, .bg-gray-7, .bg-gray-8, .bg-gray-10, .bg-primary, .breadcrumbs-custom, .bg-gray-dark h1, .bg-gray-3 h1, .bg-gray-7 h1, .bg-gray-8 h1, .bg-gray-10 h1, .bg-primary h1, .breadcrumbs-custom h1, .bg-gray-dark h2, .bg-gray-3 h2, .bg-gray-7 h2, .bg-gray-8 h2, .bg-gray-10 h2, .bg-primary h2, .breadcrumbs-custom h2, .bg-gray-dark h3, .bg-gray-3 h3, .bg-gray-7 h3, .bg-gray-8 h3, .bg-gray-10 h3, .bg-primary h3, .breadcrumbs-custom h3, .bg-gray-dark h4, .bg-gray-3 h4, .bg-gray-7 h4, .bg-gray-8 h4, .bg-gray-10 h4, .bg-primary h4, .breadcrumbs-custom h4, .bg-gray-dark h5, .bg-gray-3 h5, .bg-gray-7 h5, .bg-gray-8 h5, .bg-gray-10 h5, .bg-primary h5, .breadcrumbs-custom h5, .bg-gray-dark h6, .bg-gray-3 h6, .bg-gray-7 h6, .bg-gray-8 h6, .bg-gray-10 h6, .bg-primary h6, .breadcrumbs-custom h6, .bg-gray-dark [class^='heading'], .bg-gray-3 [class^='heading'], .bg-gray-7 [class^='heading'], .bg-gray-8 [class^='heading'], .bg-gray-10 [class^='heading'], .bg-primary [class^='heading'], .breadcrumbs-custom [class^='heading'] {
-  color: #fff;
+  color: #151515;
 }
 
 .bg-gray-dark .heading-decorated::before, .bg-gray-3 .heading-decorated::before, .bg-gray-7 .heading-decorated::before, .bg-gray-8 .heading-decorated::before, .bg-gray-10 .heading-decorated::before, .bg-primary .heading-decorated::before, .breadcrumbs-custom .heading-decorated::before {
@@ -1891,7 +1893,7 @@ hr {
 * Light backgrounds
 */
 .context-light, .context-light h1, .context-light h2, .context-light h3, .context-light h4, .context-light h5, .context-light h6, .context-light [class^='heading'] {
-  color: #fff;
+  color: #151515;
 }
 
 .bg-white {
@@ -2200,9 +2202,6 @@ hr {
     width: 3px;
     height: 30px;
     animation: .4s changeAxisBack both;
-  }
-  .card-creative__subtitle {
-    min-height: 96px;
   }
 }
 
@@ -17238,7 +17237,7 @@ html.boxed .rd-navbar--is-clone {
   margin-top: -23px;
   z-index: 10;
   cursor: pointer;
-  color: #fff;
+  color: #151515;
   fill: #fff;
   transition: .33s;
 }
@@ -36647,15 +36646,30 @@ yx-axis
   padding: 90px 0 40px 0;
 }
 
-ol {
-  counter-reset: item;
+.swiper-button-prev::before {
+    font-family: 'fl-budicons-free';
+    content: '\e016';
+    font-size: 24px;
+    opacity: 0.5;
+  }
+.swiper-button-next::before {
+    font-family: 'fl-budicons-free';
+    content: '\e025';
+    font-size: 24px;
+    opacity: 0.5;
+  }
+
+.swiper-button-next:hover::before,
+.swiper-button-prev:hover::before  {
+  opacity: 0.8;
 }
 
-ol li::before {
-    content: counters(item,". ",decimal-leading) ". ";
-    counter-increment: item;
-    color: #151515;
-    font-family: lato,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    margin-right: 12px;
+  @media (max-width: 1360px) {
+   .swiper-button-prev {
+    top: 85%;
+  }
+
+  .swiper-button-next {
+    top: 85%;
+  }
 }
