@@ -36673,3 +36673,6 @@ yx-axis
     top: 85%;
   }
 }
+.box-decorated p {
+  color: #fff;
+}
