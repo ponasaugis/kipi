@@ -451,19 +451,19 @@ $document.ready(function () {
     var regularConstraintsMessages = [
       {
         type: regula.Constraint.Required,
-        newMessage: "The text field is required."
+        newMessage: "Privalomas laukas."
       },
       {
         type: regula.Constraint.Email,
-        newMessage: "The email is not a valid email."
+        newMessage: "Neteisingas El. pa6to adresas."
       },
       {
         type: regula.Constraint.Numeric,
-        newMessage: "Only numbers are required"
+        newMessage: "Tik skaičiai"
       },
       {
         type: regula.Constraint.Selected,
-        newMessage: "Please choose an option."
+        newMessage: "Pasirinkite."
       }
     ];
 
