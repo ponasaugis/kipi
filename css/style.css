@@ -36690,3 +36690,14 @@ yx-axis
     background-blend-mode: screen;
   }
 }
+
+@media (max-width: 768px) {  
+  .thumb-janez__image-wrap {
+    background-color: gray;
+  }
+
+  .thumb-janez img {
+    mix-blend-mode: multiply;
+  }
+
+}
