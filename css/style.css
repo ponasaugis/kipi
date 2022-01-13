@@ -2203,6 +2203,9 @@ hr {
     height: 30px;
     animation: .4s changeAxisBack both;
   }
+  .card-creative__subtitle {
+    min-height: 96px;
+  }
 }
 
 @-webkit-keyframes changeAxis {
@@ -36663,6 +36666,10 @@ yx-axis
 .swiper-button-prev:hover::before  {
   opacity: 0.8;
 }
+
+.colorOrange {
+    color: #ea5a04;
+  }
 
   @media (max-width: 1360px) {
    .swiper-button-prev {
