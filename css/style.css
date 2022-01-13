@@ -36667,6 +36667,10 @@ yx-axis
   opacity: 0.8;
 }
 
+.colorOrange {
+    color: #ea5a04;
+  }
+
   @media (max-width: 1360px) {
    .swiper-button-prev {
     top: 85%;
