@@ -104,11 +104,11 @@
                 <h3>Susisiekime</h3>
                 <p>Susisiekite su mumis telefonu arba elektroniu paštu. Taip pat galite užpildyti žemiau esančią formą ir mes patys su Jumis susisieksime.</p>
                 <!-- RD Mailform-->
-                <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <form id="form" class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="formproc.php">
                   <div class="range range-sm-bottom range-20">
                     <div class="cell-sm-6">
                       <div class="form-wrap">
-                        <input class="form-input" id="contact-first-name" type="text" name="first-name" data-constraints="@Required">
+                        <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
                         <label class="form-label" for="contact-first-name">Vardas</label>
                       </div>
                     </div>
@@ -120,14 +120,14 @@
                     </div>
                     <div class="cell-xs-12">
                       <div class="form-wrap">
-                        <label class="form-label" for="contact-message">Žinutė</label>
-                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                        <label class="form-label" for="message">Žinutė</label>
+                        <textarea class="form-input" id="message" name="message" data-constraints="@Required"></textarea>
                       </div>
                     </div>
                     <div class="cell-sm-6">
                       <div class="form-wrap">
-                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                        <label class="form-label" for="contact-email">Elektronins paštas</label>
+                        <input class="form-input" id="email" type="email" name="email" data-constraints="@Email @Required">
+                        <label class="form-label" for="email">Elektronins paštas</label>
                       </div>
                     </div>
                     <div class="cell-sm-6">
